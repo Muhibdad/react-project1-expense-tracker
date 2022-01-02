@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import React,{ useContext, useState } from 'react';
 import './App.css';
+import Headerr from './Components/header';
+// import Expense from './Components/header';
+import { TransactionProvider } from './Components/TransContext';
+import TransactionReducer from './Components/TransReducer'
+
+
+// import TransactionContext from './Components/transactionContext';
+// import {TransactionProvider} from './Components/transactionContext';
+
+// import TransContext from './Components/TransContext';
+// import TransactionReducer from './Components/TransReducer';
+
 
 function App() {
+
+  // const value = useContext(TransContext);
+  // let val =useContext(TransContext);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TransactionProvider>
+      <Headerr></Headerr> 
+   </TransactionProvider>
+
+    
+   
   );
 }
 

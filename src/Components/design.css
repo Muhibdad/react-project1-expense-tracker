@@ -1,0 +1,76 @@
+.app {
+    border: 2px solid rgb(238, 230, 230);
+    width: 350px;
+    background-color: #efefef;
+    box-shadow: 0 0 10px gray;
+    margin: 0 auto;
+    border-radius: 1%;
+    max-width: 400px;
+    padding: 5px 40px;
+
+  }
+  .header{
+      text-align: center;
+  }
+  h3 span{
+      font-size: 35px;
+  }
+
+.box{
+    display: flex;
+    margin: 10px 10px;
+    padding: 0 10px;
+    /* flex-direction: row; */
+    /* text-align: center; */
+    /* justify-content: space-around;  */
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+}
+.box h2{
+    border: 2px solid white;
+    text-align: center;
+}
+
+.input{ 
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 4px;
+
+}
+.input:hover{
+    background-color: rgb(225, 225, 228);
+    
+}
+.submit{
+    border: 2px solid rgb(143, 143, 143);
+    margin: 15px 90px;
+    font-size: large;
+    background-color: rgb(225, 225, 228);
+    padding: 10px;
+    border-radius:4px ;
+    box-shadow: 0 0 10px gray;
+    
+}
+.submit:hover{
+   background-color: white;
+}
+.transaction-list{
+    margin: 0;
+    padding: 0;
+}
+.transaction-list>li{
+    display: flex;
+    /* list-style: none; */
+    padding: 5px 5px 5px 5px;
+    margin-top: 4px;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+    border-radius:4px ;
+
+}
+
